@@ -6,13 +6,13 @@ This package bundles google/woff2 for .ttf to .woff2 conversion and wget/sfnt2wo
 
 Builds for Windows are provided as releases and can be found in the `/bin` directory.
 
-## Changes to submodules
+## Required changes to submodules
 
 -   google/woff2: no changes
 -   wget/sfnt2woff:
 
     -   `woff2sfnt.c`:
-        added to fix O_BINARY build error (see: https://github.com/bramstein/sfnt2woff-zopfli/issues/7)
+        add to fix O_BINARY build error (see: https://github.com/bramstein/sfnt2woff-zopfli/issues/7), insert after last #include.
 
         ```c
         #ifdef WIN32
