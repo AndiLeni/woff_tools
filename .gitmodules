@@ -1,0 +1,6 @@
+[submodule "sfnt2woff"]
+	path = sfnt2woff
+	url = https://github.com/wget/sfnt2woff
+[submodule "woff2"]
+	path = woff2
+	url = https://github.com/google/woff2
